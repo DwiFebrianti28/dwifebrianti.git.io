@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mache</title>
+  <link rel="stylesheet" href="Tugas.css" />
+</head>
+<body>
+  <div class="mode">
+    <h2 onclick="darkMode()">dark mode</h2>
+  </div>
+  <div class="conteiner">
+    <table  border="1px solid black" cellspacing="0" style="width: 90%;" onclick="klikIni()" >
+      <tr>
+        <th>Nama</th>
+        <th>Alamat</th>
+        <th>Aksi</th>
+      <tr>
+        <td id="name">Ainin</td>
+        <td>Majalengka Jawa Barat</td>
+        <td>Hapus</td>
+      </tr> 
+      <tr>
+        <td>Angga</td>
+        <td> Tarub Tegal </td>
+        <td>Hapus</td>
+      </tr>
+      <tr>
+        <td>yasni</td>
+        <td >Ciamis </td>
+        <td>Hapus</td>
+      </tr>
+      <tr>
+        <td >Rio</td>
+        <td>Yomani</td>
+        <td>Hapus</td> 
+      </tr>
+      <tr>
+        <td>Suci</td>
+        <td>Ciamis</td>
+        <td>Hapus</td>
+      </tr>
+      <tr>
+        <td>Mara</td>
+        <td>Ciamis</td>
+        <td>Hapus</td>
+      </tr>
+      <tr>
+        <td>Puput</td>
+        <td>Brebes</td>
+        <td>Hapus</td>
+      </tr>
+      <tr>
+        <td>Astrid</td>
+        <td>Brebes</td>
+       <td>Hapus</td>
+      </tr>
+      <tr>
+        <td>Salman</td>
+        <td>Tegal</td>
+         <td>Hapus</td>
+      </tr>
+      <tr>
+        <td>Sayid</td>
+        <td>Tangerang</td>
+        <td>Hapus</td> 
+      </tr>
+    </table>
+    <script>
+   function klikIni() {
+     let name = document.getElementById('name');
+     //alert(0)
+     let data = get.text('name');
+     alert(data)
+   }
+   function darkMode() {
+     const dark = document.body
+     dark.classList.toggle('dark');
+   }
+    </script>
+  </div>
+</body>
+</html>
